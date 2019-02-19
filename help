@@ -1,0 +1,20 @@
+var calculate_click = function ()
+    {
+    var cents = $("cents").value;
+    if (cents > 24){
+    var quarters = Math.floor(cents/25); //Changed from 0.25 to 25
+    $("quarters").value = quarters
+    }
+    if (cents > 9){
+    var dimes = Math.floor(cents/10); //changed this to 10
+    $("dimes").value = dimes
+    }
+    if (cents > 4){
+    var nickels = Math.floor(cents/05); // changed this one to the correct 05
+    $("nickels").value = nickels
+    }
+    if (cents > 0) {
+    var pennies = Math.floor(cents/01);
+    $("pennies").value = pennies
+    }
+    }
